@@ -1,2 +1,2 @@
-# Systems-ControlTheory
+# SystemsControlTheory
 Slides of the Course
