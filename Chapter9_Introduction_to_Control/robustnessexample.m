@@ -1,0 +1,10 @@
+K = 0.5;
+a = 0;
+eps=-0.2;
+x=linspace(-1, 1, 1000);
+y1=x.^2 + (K-a)*x;
+y2=x.^2 + (K-a)*x + eps*K;
+plot(x, y1, 'b');
+hold on;
+plot(x, y2, 'r');
+ylim([-0.2, 1.6]);

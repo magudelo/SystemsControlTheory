@@ -1,0 +1,39 @@
+Open loop vs Closed loop:
+https://www.youtube.com/watch?v=O-OqgFE9SD4
+
+PID controller:
+https://www.youtube.com/watch?v=4Y7zG48uHRo
+
+Inverted pendulum:
+https://www.youtube.com/watch?v=a4c7AwHFkT8
+
+Disturbance rejection ball:
+https://www.youtube.com/watch?v=UW7UdVV68Yw
+
+Disturbance rejection quadcopter:
+https://www.youtube.com/watch?v=LMMM9Kbivq8
+
+Chicken head tracking (stability?)
+https://www.youtube.com/watch?v=_dPlkFPowCc
+
+Audi car tracking:
+https://www.youtube.com/watch?v=Qa_ZSRj0WM0
+
+Lily camera tracking:
+https://www.youtube.com/watch?v=4vGcH0Bk3hg
+
+Ball tracking:
+https://www.youtube.com/watch?v=nwSeI_IkL1Q
+
+QUADCOPTER
+https://www.youtube.com/watch?v=w2itwFJCgFQ
+3.28: stability
+3.43: reference tracking
+4.40: model errors / robustness
+9.0: reference tracking
+
+Steady State Error Example:
+https://www.youtube.com/watch?v=c5Rmoxt9-kM
+
+Steady State explanation:
+https://www.youtube.com/watch?v=PXxveGoNRUw

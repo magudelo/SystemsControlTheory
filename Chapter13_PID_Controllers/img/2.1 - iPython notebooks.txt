@@ -1,0 +1,141 @@
+2.1 iPython notebooks - requirements, installation and execution
+
+
+
+<p><span style="color:rgb(0, 0, 205)"><span style="font-size:18px"><strong>How to install IPython and the needed packages?</strong></span></span></p>
+
+<p>If you don&#39;t have Python&nbsp;<strong>2.7,&nbsp;</strong>install Anaconda&nbsp;<a href="http://continuum.io/downloads" target="_blank">http://continuum.io/downloads</a></p>
+
+<p>See the video on page 2.3!</p>
+
+<p>Needed packages:</p>
+
+<ul>
+	<li>Ipython
+	<ul>
+		<li>Ipython</li>
+		<li>jinja2</li>
+		<li>jsonshema</li>
+		<li>pyzmq</li>
+		<li>pygments</li>
+		<li>tornado</li>
+		<li>nose</li>
+	</ul>
+	</li>
+	<li>numpy</li>
+	<li>scipy</li>
+	<li>sympy</li>
+	<li>control</li>
+	<li>matplotlib
+	<ul>
+		<li>setuptools</li>
+		<li>python-dateutil</li>
+		<li>pytz</li>
+		<li>pyparsing</li>
+		<li>six</li>
+		<li>tornado</li>
+	</ul>
+	</li>
+</ul>
+
+<p><strong>Windows</strong>:</p>
+
+<p>Option 1: Using Anaconda<strong> (Recommended option) </strong>(see 2.3)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 1 : Download and install Anaconda (<a href="http://continuum.io/downloads" target="_blank">http://continuum.io/downloads</a>)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Step 2: Install the control package</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Open windows command line (go to start menu and enter cmd in the search field) &nbsp;and enter in the interface,&nbsp;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1)&nbsp;<span style="color:rgb(128, 128, 128)"><em>cd C:\Anaconda</em></span><em>\</em><span style="color:rgb(128, 128, 128)"><em>Scripts</em></span></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2)<span style="color:rgb(230, 230, 250)"><em>&nbsp;</em></span><span style="color:rgb(128, 128, 128)"><em>pip install control</em></span></p>
+
+<p>Option 2: Using pip (see 2.2)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Step 1: Copy&nbsp;<a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">https://bootstrap.pypa.io/get-pip.py</a>&nbsp;to a&nbsp;new python file. Save the file and execute it.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Step 2: Open windows command line (go to start menu and enter cmd in the search field)&nbsp; and enter,</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1)&nbsp;<span style="color:rgb(128, 128, 128)"><em>cd C:\Python27\Scripts</em></span></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For all packages above execute:</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2) &nbsp;<span style="color:rgb(128, 128, 128)"><em>pip install %</em></span>&nbsp;with % the name of the package</p>
+
+<p>Option 3 Using pip and .bat file</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Step 1: Copy&nbsp;<a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">https://bootstrap.pypa.io/get-pip.py</a>&nbsp;to a&nbsp;new python file. Save the file and execute it.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Step 2:&nbsp;<a href="https://drive.google.com/file/d/0BxFBiW6-_o47VUtoSFh6UHJTaW8/view?usp=sharing" target="_blank">https://drive.google.com/file/d/0BxFBiW6-_o47VUtoSFh6UHJTaW8/view?usp=sharing</a>.&nbsp;Download this bat file to C:\Users\[Your Username]\Documents (Mijn Documenten)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Step 3: Open windows command line and enter cd C:\Users\[Your Username]\Documents</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Step 4: Enter in the interface</p>
+
+<p style="margin-left:80px">1) &nbsp;<em><span style="color:rgb(128, 128, 128)">ipython.bat</span></em></p>
+
+<p><strong>Using Linux:</strong></p>
+
+<p>Step 1 : Open terminal and enter sudo apt-get install python-pip</p>
+
+<p>Step 2: &nbsp;For each package above enter in the terminal:</p>
+
+<p style="margin-left:40px">1)&nbsp;<em><span style="color:rgb(128, 128, 128)">pip install %</span></em>, with&nbsp;% the name of the package.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Using Mac:</strong></p>
+
+<p>Option 1: Using Anaconda</p>
+
+<p style="margin-left:40px">Step 1: Download and install Anaconda (http://continuum.io/downloads#all)</p>
+
+<p style="margin-left:40px">Step 2: Open the terminal (search for Terminal with&nbsp;your Spotlight)&nbsp;and enter:</p>
+
+<p style="margin-left:80px">1)&nbsp;<span style="color:rgb(128, 128, 128)"><em>sudo pip install control</em></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="color:rgb(0, 0, 205)"><span style="font-size:18px"><strong>How to open Ipython notebooks?</strong></span></span></p>
+
+<p><strong>Using Windows:</strong></p>
+
+<p style="margin-left:40px">Step 1: (Only first time) Adding Ipython to path (<a href="http://www.computerhope.com/issues/ch000549.htm" target="_blank">http://www.computerhope.com/issues/ch000549.htm</a>):&nbsp;</p>
+
+<p style="margin-left:80px">- Open&nbsp;Control Panel</p>
+
+<p style="margin-left:80px">- Choose System</p>
+
+<p style="margin-left:80px">- Advanced System Settings -&gt; Advanced -&gt;Environment Variables</p>
+
+<p style="margin-left:80px">- I<span style="color:rgb(69, 69, 69); font-size:16px">n the Environment Variables window, highlight the&nbsp;</span><strong>Path</strong><span style="color:rgb(69, 69, 69); font-size:16px">&nbsp;variable in the &quot;System variables&quot; section and click the&nbsp;</span><strong>Edit</strong><span style="color:rgb(69, 69, 69); font-size:16px">&nbsp;button</span></p>
+
+<p style="margin-left:80px">- Add at the end:</p>
+
+<p style="margin-left:120px">1)<em><span style="color:rgb(128, 128, 128)">&nbsp;;C:/Python27/Scripts</span></em></p>
+
+<p style="margin-left:40px">Step 2: Download the Ipython file and the python file to&nbsp;C:\Users\[Your Username]\Documents</p>
+
+<p style="margin-left:40px">Step 3: Open windows command line&nbsp;<span style="font-size:14px">(go to start menu and enter cmd in the search field)</span>:</p>
+
+<p style="margin-left:80px">1)&nbsp;<span style="color:rgb(128, 128, 128)"><em>cd C:\Users\[Your Username]\Documents</em></span></p>
+
+<p style="margin-left:80px">2)&nbsp;<em><span style="color:rgb(128, 128, 128)">ipython notebook [filename].ipynb</span></em></p>
+
+<p><strong>Using Linux:</strong></p>
+
+<p style="margin-left:40px">Step 1: Download the ipython and the python&nbsp;file.</p>
+
+<p style="margin-left:40px">Step 2: Go in the terminal&nbsp;to the map where you downloaded it and enter:</p>
+
+<p style="margin-left:80px"><span style="color:rgb(128, 128, 128)"><em>ipython notebook filename.ipynb</em></span></p>
+
+<p><strong>Using Mac:</strong></p>
+
+<p style="margin-left:40px">Step 1: Download the ipython and the python&nbsp;file.</p>
+
+<p style="margin-left:40px">Step 2: In the terminal: go to the map where you downloaded the files (e.g. if the map is called notebooks-systemtheory, enter &#39;cd notebooks-systemtheory&#39; in your terminal). To immediately open the notebook you want, enter:</p>
+
+<p style="margin-left:80px"><span style="color:rgb(128, 128, 128)"><em>ipython notebook&nbsp;</em></span><em>filename.ipynb</em></p>

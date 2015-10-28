@@ -1,0 +1,35 @@
+\frametitle {Digital Implementation}
+\small{
+The difference equations are typically implemented in a microcontroller or in an FPGA  (field-programmable gate array) device:
+\vspace{-0.5em}
+\begin{align*}
+u[k] &= K_p e[k] + \frac{K_d}{T_s}(e[k] - e[k-1])+u_i[k] \\
+&\text{with } u_i[k] = u_i[k-1] + K_i T_s e[k]
+\end{align*}
+}
+\vspace{-1.5em}
+\begin{block}{Pseudocode}
+\hbox{\hspace{0em}
+\begin{lstlisting}[basicstyle=\scriptsize]
+previous_error = 0
+integral = 0
+Start:
+<@\hspace{0.5cm}@> error = setpoint - measured_value
+<@\hspace{0.5cm}@> proportional = KP * error
+<@\hspace{0.5cm}@> integral = integral + Ki*sampling_time*error
+<@\hspace{0.5cm}@> derivative = Kd*(error-previous_error)/sampling_time
+<@\hspace{0.5cm}@> output = proportional + integral + derivative
+<@\hspace{0.5cm}@> previous_error = error
+<@\hspace{0.5cm}@> <@\textcolor{blue}{wait}@> (sampling_time)
+<@\hspace{0.5cm}@> <@\textcolor{blue}{goto}@> Start
+\end{lstlisting}
+}
+% \begin{enumerate}
+% \item Wait for clock interrupt
+% \item Read analog input
+% \item Compute control signal
+% \item Set analog output
+% \item Update controller variables
+% \item Go to 1
+% \end{enumerate}
+\end{block}
